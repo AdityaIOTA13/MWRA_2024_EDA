@@ -8,7 +8,8 @@ df = pd.read_csv('data/MWRA-DOWNCAST-2024.csv')
 df['STAT_ARRIV'] = pd.to_datetime(df['STAT_ARRIV'], format='%d-%b-%Y %H:%M:%S')
 
 station_categories = {
-    'Mass Bay Nearfield': ['N01', 'N02', 'N03', 'N04', 'N05', 'N06', 'N07', 'N08', 'N09', 'N10'],
+    'Mass Bay Nearfield': [
+        'N01', 'N02', 'N03', 'N04', 'N05', 'N06', 'N07', 'N08', 'N09', 'N10'],
     'Mass Bay Farfield': ['F06', 'F10', 'F13', 'F15', 'F22'],
     'Boston Harbor Outlet': ['F23'],
     'Cape Cod Bay': ['F01', 'F02', 'F29']
